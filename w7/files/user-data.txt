@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mkdir -p /home/ec2-user/.ssh
+cat <<FILE > /home/ec2-user/.ssh/authorized_keys
+ssh-rsa AAAAEXAMPLEyc2EAAAADAQABAAABAQCxz1G2vfqCabgFNZiL/timcrISitT4ShZP0iB4G1F+tFRM7to3CstEbS9TFeEXAMPLEMueqQb34lVt+ieodNEXAMPLEFm3HR2gywFwQjKYIVQt0SeB0XXLgAUIp+FS7MVyywDdViLqHWeEXAMPLEECyzs2KULS+9mc5Bz0Ap1Liskoa5V9umz8LhA9WLqNaCtt6fWQurPAd5lpEXAMPLE user@host
+FILE
+
+chown ec2-user.ec2-user /home/ec2-user/.ssh/authorized_keys
+chmod 400 /home/ec2-user/.ssh/authorized_keys

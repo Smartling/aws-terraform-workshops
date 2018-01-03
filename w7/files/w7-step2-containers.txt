@@ -1,0 +1,13 @@
+[
+   {
+    "name": "webservice",
+	"image": "anosulchik/workshop-sample-aplication:v1.0",
+	"memory": 4096,
+	"essential": true,
+	"environment": [{
+		"name": "VARIABLE",
+		"value": "VALUE"
+	}],
+	"cpu": 100
+   }
+]
